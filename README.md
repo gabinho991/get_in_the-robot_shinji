@@ -48,14 +48,14 @@
 ## How to Submit
 
 #### Part 1 -  _Pushing_ local changes to remote repository
-* from a _terminal_ navigate to the root directory of the _cloned_ project.
+* from a _terminal_ navigate to the root directory of the _cloned_ project and checkout to the _boilerplate_ branch.
 * from the root directory of the project, execute the following commands:
     * add all changes
       * `git add .`
-    * commit changes to be pushed
+    * commit changes to be pushed in the _boilerplate_ branch
       * `git commit -m 'I have added changes'`
-    * push changes to your repository
-      * `git push -u origin master`
+    * push changes to the your repository
+      * `git push -u origin boilerplate`
 
 #### Part 2 - Submitting assignment 
 * from the browser, navigate to the _forked_ project from **your** github account.
