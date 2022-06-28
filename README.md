@@ -35,10 +35,10 @@
 * Link the local repository just created with the original you forked from 
   * If new content is added to this repository, you can pull the new changes, but the remote 'origin' points to your forked version
   * Add another remote and call it 'upstream':
-    * `git remote add upstream https://github.com/Java-Full-Stack-TEK/javascript_day-2-exercises`
+    * `git remote add upstream https://github.com/{FORKSOURCE}/get_in_the-robot_shinji`
 * To fetch or pull changes, we tell git to look at the Github upstream remote (pointing here) instead of the origin remote (which points to your fork):
   * For git to try and merge changes, we use git pull <remote> <branch>:
-    * `git pull upstream master`
+    * `git pull upstream main`
   * In case there of a merge conflict, we can update all remote branches, but save merging for later using git fetch <remote>:
     * `git fetch upstream`
 
@@ -49,13 +49,16 @@
 
 #### Part 1 -  _Pushing_ local changes to remote repository
 * from a _terminal_ navigate to the root directory of the _cloned_ project.
+
 * from the root directory of the project, execute the following commands:
+    * Checkout into the _boilerplate_ branch
+      * `git checkout boilerplate`
     * add all changes
       * `git add .`
-    * commit changes to be pushed
+    * commit changes to be pushed in the _boilerplate_ branch
       * `git commit -m 'I have added changes'`
-    * push changes to your repository
-      * `git push -u origin master`
+    * push changes to your repository remote _boilerplate_ branch
+      * `git push -u origin boilerplate`
 
 #### Part 2 - Submitting assignment 
 * from the browser, navigate to the _forked_ project from **your** github account.
